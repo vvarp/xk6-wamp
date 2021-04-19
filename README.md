@@ -1,4 +1,4 @@
-# xk6-redis
+# xk6-wamp
 
 This is a [WAMP protocol](https://wamp-proto.org) client library for [k6](https://github.com/loadimpact/k6),
 implemented as an extension using the [xk6](https://github.com/k6io/xk6) system.
@@ -24,7 +24,7 @@ Then:
 
 2. Build the binary:
   ```shell
-  xk6 build v0.31.1 --with github.com/vvarp/xk6-wamp
+  make build
   ```
 
 ## Example test script
