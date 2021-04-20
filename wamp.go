@@ -67,6 +67,13 @@ func (c *Client) Subscribe(topic string, options wamp.Dict, handler goja.Value) 
 	return 0
 }
 
+func (c *Client) Publish(topic string, options wamp.Dict, args wamp.List, kwargs wamp.Dict) {
+	err := c.client.Publish(topic, options, args, kwargs)
+	if err != nil {
+		log.Print(err)
+	}
+}
+
 func (c *Client) Disconnect() {
 	err := c.client.Close()
 	if err != nil {
