@@ -1,7 +1,7 @@
 # xk6-wamp
 
 This is a [WAMP protocol](https://wamp-proto.org) client library for [k6](https://go.k6.io/k6),
-implemented as an extension using the [xk6](https://github.com/k6io/xk6) system.
+implemented as an extension using the [xk6](https://github.com/grafana/xk6) system.
 
 It is based on [nexus WAMP client library](https://github.com/gammazero/nexus).
 
@@ -19,7 +19,7 @@ Then:
 
 1. Install `xk6`:
   ```shell
-  go install github.com/k6io/xk6/cmd/xk6@latest
+  go install go.k6.io/xk6/cmd/xk6@latest
   ```
 
 2. Build the binary:
